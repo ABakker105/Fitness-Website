@@ -1,0 +1,88 @@
+### CREATE five documents.
+POST http://localhost:3001/drinks HTTP/1.1
+content-type: application/json
+
+{
+    "drinkDate": "2025-02-08",
+    "beverageType": "Lime water",
+    "numGlasses": 8,
+    "caloriesDrank": 32
+}
+
+
+### CREATE 2
+POST http://localhost:3001/drinks HTTP/1.1
+content-type: application/json
+
+{
+    "drinkDate": "2025-02-09",
+    "beverageType": "Gatorade",
+    "numGlasses": 2,
+    "caloriesDrank": 160
+}
+
+### CREATE 3
+POST http://localhost:3001/drinks HTTP/1.1
+content-type: application/json
+
+{
+    "drinkDate": "2025-02-10",
+    "beverageType": "Water",
+    "numGlasses": 8,
+    "caloriesDrank": 0
+}
+
+### CREATE 4
+POST http://localhost:3001/drinks HTTP/1.1
+content-type: application/json
+
+{
+    "drinkDate": "2025-02-11",
+    "beverageType": "Water",
+    "numGlasses": 5,
+    "caloriesDrank": 0
+}
+
+### CREATE 5
+POST http://localhost:3001/drinks HTTP/1.1
+content-type: application/json
+
+{
+    "drinkDate": "2025-02-12",
+    "beverageType": "Lemon water",
+    "numGlasses": 6,
+    "caloriesDrank": 40
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3001/drinks HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3001/drinks/67cdf6a1322fdf7769a2717e HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3001/drinks/67cdf6a1322fdf7769a2717e HTTP/1.1
+content-type: application/json
+
+{
+    "drinkDate": "2024-02-13",
+    "beverageType": "Water",
+    "numGlasses": 7,
+    "caloriesDrank": 0
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3001/drinks/67cdf6a1322fdf7769a2717e HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3001/drinks HTTP/1.1
+

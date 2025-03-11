@@ -1,0 +1,88 @@
+### CREATE five documents.
+POST http://localhost:3002/moods HTTP/1.1
+content-type: application/json
+
+{
+    "moodDate": "2025-03-09",
+    "moodType": "Happy",
+    "moodDuration": 60,
+    "moodDiary": "I went for a walk, which boosted my mood."
+}
+
+
+### CREATE 2
+POST http://localhost:3002/moods HTTP/1.1
+content-type: application/json
+
+{
+    "moodDate": "2025-03-10",
+    "moodType": "depressed",
+    "moodDuration": 10,
+    "moodDiary": "I am worried about finals."
+}
+
+### CREATE 3
+POST http://localhost:3002/moods HTTP/1.1
+content-type: application/json
+
+{
+    "moodDate": "2025-03-10",
+    "moodType": "hangry",
+    "moodDuration": 50,
+    "moodDiary": "I was stuck on a test, so I had to eat dinner later :( ."
+}
+
+### CREATE 4
+POST http://localhost:3002/moods HTTP/1.1
+content-type: application/json
+
+{
+    "moodDate": "2025-03-07",
+    "moodType": "Bored",
+    "moodDuration": 10,
+    "moodDiary": "I had nothing to do."
+}
+
+### CREATE 5
+POST http://localhost:3002/moods HTTP/1.1
+content-type: application/json
+
+{
+    "moodDate": "2025-03-02",
+    "moodType": "Happy",
+    "moodDuration": 60,
+    "moodDiary": "I did well on my test."
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3002/moods HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3002/moods/67ce5749e2674e755d5af337 HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3002/moods/67ce5749e2674e755d5af337 HTTP/1.1
+content-type: application/json
+
+{
+    "moodDate": "2025-03-02",
+    "moodType": "Happy",
+    "moodDuration": 60,
+    "moodDiary": "I did well on my test."
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3002/moods/67ce5749e2674e755d5af337 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3002/moods HTTP/1.1
+

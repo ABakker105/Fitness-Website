@@ -1,0 +1,94 @@
+### CREATE five documents.
+POST http://localhost:3003/sleeps HTTP/1.1
+content-type: application/json
+
+{
+    "sleepDate": "2025-01-15",
+    "bedTime": "10:00 pm",
+    "wakeTime": "7:00 am",
+    "hoursSlept": 9,
+    "sleepDiary": "I got a really good deep sleep without waking up in the night."
+}
+
+
+### CREATE 2
+POST http://localhost:3003/sleeps HTTP/1.1
+content-type: application/json
+
+{
+    "sleepDate": "2025-02-02",
+    "bedTime": "1:00 am",
+    "wakeTime": "8:00 am",
+    "hoursSlept": 7,
+    "sleepDiary": "I was up extra late studying, so I didn't get as much sleep as I would've liked to."
+}
+
+### CREATE 3
+POST http://localhost:3003/sleeps HTTP/1.1
+content-type: application/json
+
+{
+    "sleepDate": "2025-03-03",
+    "bedTime": "11:00 pm",
+    "wakeTime": "7:00 am",
+    "hoursSlept": 8,
+    "sleepDiary": "I slept pretty well, but woke up one time in the night for a minute."
+}
+
+### CREATE 4
+POST http://localhost:3003/sleeps HTTP/1.1
+content-type: application/json
+
+{
+    "sleepDate": "2025-02-16",
+    "bedTime": "8:00 pm",
+    "wakeTime": "5:00 am",
+    "hoursSlept": 9,
+    "sleepDiary": "I slept pretty well and went to bed early so that I could get up early for an appointment."
+}
+
+### CREATE 5
+POST http://localhost:3003/sleeps HTTP/1.1
+content-type: application/json
+
+{
+    "sleepDate": "2025-02-20",
+    "bedTime": "12:00 am",
+    "wakeTime": "6:00 am",
+    "hoursSlept": 6,
+    "sleepDiary": "I didn't get done with a project until late, so I only got 6 hours of sleep."
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3003/sleeps HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3003/sleeps/67cfaa10084cbf9ad039c2be HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3003/sleeps/67cfaa10084cbf9ad039c2be HTTP/1.1
+content-type: application/json
+
+{
+    "sleepDate": "2025-01-15",
+    "bedTime": "10:00 pm",
+    "wakeTime": "7:00 am",
+    "hoursSlept": 9,
+    "sleepDiary": "I got a really good deep sleep without waking up in the night."
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3003/sleeps/67cfaa10084cbf9ad039c2be HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3003/sleeps HTTP/1.1
+

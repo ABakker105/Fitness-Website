@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Onest:wght@100..900&family=Poetsen+One&display=swap');
+
+:root {
+    --light-grey: #D6D4D4;
+    --white: #FFFFFF;
+    --black: #191818;
+    --teal: #395A5C;
+    --sand: #EADDB7;
+    --light-grey-transparent: rgba(214, 212, 212, 0.9);
+    --white-transparent: rgba(255, 255, 255, 0.5);
+    --black-transparent: rgba(25, 24, 24, 0.5);
+    --teal-transparent: rgba(57, 90, 92, 0.6);
+    --sand-transparent: rgba(234, 221, 183, 0.5);
+}
+
+body {
+    background-color: var(--light-grey-transparent);
+    background-image: url(src/Pictures/montones-beach-puerto-rico.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--black);
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    margin: 0 auto;
+    padding: 0;
+    max-width: 70%;
+    min-width: 70%;
+}
+
+header, footer {
+    background-color: var(--teal-transparent);
+    color: var(--white);
+    margin: 0 auto;
+    padding: 1.5%;
+    text-align: center;
+    border: 1px solid var(--white);
+    font-size: 20px;
+}
+
+i {
+    font-size: 30px;
+    top: 40px;
+    display: inline-block;
+}
+
+main {
+    background-color: var(--white);
+    color: var(--teal);
+    padding: 0;
+    border: 5px dotted var(--light-grey);
+    padding: 2%;
+}
+
+article {
+    margin: 0 2%;
+    font-size: 20px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}    
+
+table th, table td {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 0.9em;
+    border: 2px solid var(--black);
+}
+
+form, button, input, select, textarea {
+    color: var(--black);
+    margin-bottom: 10px;
+  }
+
+tr th {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+tbody {
+    background-color: var(--sand);
+    padding: 10px;
+}
+
+input {
+    padding: 2%;
+    font-size: 100;
+    margin-bottom: 10px;
+    border: 2px solid var(--black);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 2px dashed var(--white);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px dashed var(--black);
+}
+
+*:required {
+    border: 2px solid var(--black);
+  }
+
+  label.required:after {
+    content: " *";
+    color: red;
+  }
+
+nav {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 10px;
+}
+
+nav a {
+    background-color: var(--light-grey);
+    border: 3px solid var(--black);
+    color: var(--black);
+    font-size: 30px;
+    padding: 10px 1px;
+    margin: 1px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+nav a:hover {
+    background-color: var(--black);
+    color: var(--light-grey);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poetsen One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 4px solid var(--teal);
+    padding: 2%;
+    color: var(--black);
+    background-color: var(--sand);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid var(--teal);
+}
