@@ -5,3 +5,7 @@
 ###   - For Rowan's microservice A, run "node Server.js"
 ###   - For my other microservices, run "npm start"
 # You are all set now!
+
+
+# Citations:
+## 
