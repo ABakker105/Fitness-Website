@@ -8,4 +8,4 @@
 
 
 # Citations:
-### The contents of the folder cs361-rowanbignell-microservice-a were developed by a group member, Rowan Bignell, as part of our CS361 class project. 
+###  - The contents of the folder cs361-rowanbignell-microservice-a were developed by a group member, Rowan Bignell, as part of our CS361 class project. 
